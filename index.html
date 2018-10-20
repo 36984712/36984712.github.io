@@ -229,6 +229,140 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/Venv-Anaconda-1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="森林里的猩猩窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/21/Venv-Anaconda-1/" itemprop="url">Venv_Anaconda</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-21T10:33:43+11:00">
+                2018-10-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="anaconda-虚环境管理"><a href="#anaconda-虚环境管理" class="headerlink" title="anaconda 虚环境管理"></a>anaconda 虚环境管理</h1><h3 id="虚环境创建"><a href="#虚环境创建" class="headerlink" title="虚环境创建"></a>虚环境创建</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py3 python=3.5</span><br></pre></td></tr></table></figure>
+<p>其中py3表示创建环境的名字，后面python=3.5表示创建的版本。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py3 python=3.5 numpy pandas</span><br></pre></td></tr></table></figure>
+<p>这个是在创建环境的时候同时安装包</p>
+<h3 id="Anaconda环境的激活"><a href="#Anaconda环境的激活" class="headerlink" title="Anaconda环境的激活"></a>Anaconda环境的激活</h3><p>在 OSX/Linux 上</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source activate py3</span><br></pre></td></tr></table></figure>
+<p>py3为环境名，上述表示激活py3</p>
+<p>windows下</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">activate py3</span><br></pre></td></tr></table></figure>
+<h3 id="Anaconda环境的管理"><a href="#Anaconda环境的管理" class="headerlink" title="Anaconda环境的管理"></a>Anaconda环境的管理</h3><p>列出所有环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br></pre></td></tr></table></figure>
+<p>删除环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env remove -n py3</span><br></pre></td></tr></table></figure>
+<p>上述表示删除环境名为py3的环境</p>
+<h3 id="退出环境"><a href="#退出环境" class="headerlink" title="退出环境"></a>退出环境</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source deactivate</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/python-spider-youkuVip/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -754,7 +888,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

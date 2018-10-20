@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="数据处理numpy和pytorch tensor 转换 1234567891011import torchimport numpy as npnp_data = np.arange(6).reshape((2, 3))torch_data = torch.from_numpy(np_data)tensor2array = torch_data.numpy()print(    &apos;\nnumpy a">
+<meta name="description" content="anaconda 虚环境管理虚环境创建1conda create -n py3 python=3.5 其中py3表示创建环境的名字，后面python=3.5表示创建的版本。 1conda create -n py3 python=3.5 numpy pandas 这个是在创建环境的时候同时安装包 Anaconda环境的激活在 OSX/Linux 上 1source activate py3 py3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pytorch fundation">
-<meta property="og:url" content="http://yoursite.com/2018/10/03/pytorch-fundation/index.html">
+<meta property="og:title" content="Venv_Anaconda">
+<meta property="og:url" content="http://yoursite.com/2018/10/21/Venv-Anaconda-1/index.html">
 <meta property="og:site_name" content="森林里的猩猩窝">
-<meta property="og:description" content="数据处理numpy和pytorch tensor 转换 1234567891011import torchimport numpy as npnp_data = np.arange(6).reshape((2, 3))torch_data = torch.from_numpy(np_data)tensor2array = torch_data.numpy()print(    &apos;\nnumpy a">
+<meta property="og:description" content="anaconda 虚环境管理虚环境创建1conda create -n py3 python=3.5 其中py3表示创建环境的名字，后面python=3.5表示创建的版本。 1conda create -n py3 python=3.5 numpy pandas 这个是在创建环境的时候同时安装包 Anaconda环境的激活在 OSX/Linux 上 1source activate py3 py3">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-03T01:01:18.531Z">
+<meta property="og:updated_time" content="2018-10-20T23:34:49.467Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pytorch fundation">
-<meta name="twitter:description" content="数据处理numpy和pytorch tensor 转换 1234567891011import torchimport numpy as npnp_data = np.arange(6).reshape((2, 3))torch_data = torch.from_numpy(np_data)tensor2array = torch_data.numpy()print(    &apos;\nnumpy a">
+<meta name="twitter:title" content="Venv_Anaconda">
+<meta name="twitter:description" content="anaconda 虚环境管理虚环境创建1conda create -n py3 python=3.5 其中py3表示创建环境的名字，后面python=3.5表示创建的版本。 1conda create -n py3 python=3.5 numpy pandas 这个是在创建环境的时候同时安装包 Anaconda环境的激活在 OSX/Linux 上 1source activate py3 py3">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/03/pytorch-fundation/">
+  <link rel="canonical" href="http://yoursite.com/2018/10/21/Venv-Anaconda-1/">
 
 
 
 
 
-  <title>pytorch fundation | 森林里的猩猩窝</title>
+  <title>Venv_Anaconda | 森林里的猩猩窝</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/03/pytorch-fundation/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/Venv-Anaconda-1/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">pytorch fundation</h1>
+          <h1 class="post-title" itemprop="name headline">Venv_Anaconda</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-03T10:45:18+10:00">
-                2018-10-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-21T10:33:43+11:00">
+                2018-10-21
               </time>
             
 
@@ -299,12 +299,21 @@
       
 
       
-        <h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><p>numpy和pytorch tensor 转换</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np_data = np.arange(<span class="number">6</span>).reshape((<span class="number">2</span>, <span class="number">3</span>))</span><br><span class="line">torch_data = torch.from_numpy(np_data)</span><br><span class="line">tensor2array = torch_data.numpy()</span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nnumpy array:'</span>, np_data,          <span class="comment"># [[0 1 2], [3 4 5]]</span></span><br><span class="line">    <span class="string">'\ntorch tensor:'</span>, torch_data,      <span class="comment">#  0  1  2 \n 3  4  5    [torch.LongTensor of size 2x3]</span></span><br><span class="line">    <span class="string">'\ntensor to array:'</span>, tensor2array, <span class="comment"># [[0 1 2], [3 4 5]]</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>数学计算</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># abs 绝对值计算</span></span><br><span class="line">data = [<span class="number">-1</span>, <span class="number">-2</span>, <span class="number">1</span>, <span class="number">2</span>]</span><br><span class="line">tensor = torch.FloatTensor(data)  <span class="comment"># 转换成32位浮点 tensor</span></span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nabs'</span>,</span><br><span class="line">    <span class="string">'\nnumpy: '</span>, np.abs(data),          <span class="comment"># [1 2 1 2]</span></span><br><span class="line">    <span class="string">'\ntorch: '</span>, torch.abs(tensor)      <span class="comment"># [1 2 1 2]</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># sin   三角函数 sin</span></span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nsin'</span>,</span><br><span class="line">    <span class="string">'\nnumpy: '</span>, np.sin(data),      <span class="comment"># [-0.84147098 -0.90929743  0.84147098  0.90929743]</span></span><br><span class="line">    <span class="string">'\ntorch: '</span>, torch.sin(tensor)  <span class="comment"># [-0.8415 -0.9093  0.8415  0.9093]</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># mean  均值</span></span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nmean'</span>,</span><br><span class="line">    <span class="string">'\nnumpy: '</span>, np.mean(data),         <span class="comment"># 0.0</span></span><br><span class="line">    <span class="string">'\ntorch: '</span>, torch.mean(tensor)     <span class="comment"># 0.0</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p>矩阵计算</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># matrix multiplication 矩阵点乘</span></span><br><span class="line">data = [[<span class="number">1</span>,<span class="number">2</span>], [<span class="number">3</span>,<span class="number">4</span>]]</span><br><span class="line">tensor = torch.FloatTensor(data)  <span class="comment"># 转换成32位浮点 tensor</span></span><br><span class="line"><span class="comment"># correct method</span></span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nmatrix multiplication (matmul)'</span>,</span><br><span class="line">    <span class="string">'\nnumpy: '</span>, np.matmul(data, data),     <span class="comment"># [[7, 10], [15, 22]]</span></span><br><span class="line">    <span class="string">'\ntorch: '</span>, torch.mm(tensor, tensor)   <span class="comment"># [[7, 10], [15, 22]]</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># !!!!  下面是错误的方法 !!!!</span></span><br><span class="line">data = np.array(data)</span><br><span class="line">print(</span><br><span class="line">    <span class="string">'\nmatrix multiplication (dot)'</span>,</span><br><span class="line">    <span class="string">'\nnumpy: '</span>, data.dot(data),        <span class="comment"># [[7, 10], [15, 22]] 在numpy 中可行</span></span><br><span class="line">    <span class="string">'\ntorch: '</span>, tensor.dot(tensor)     <span class="comment"># torch 会转换[1,2,3,4].dot([1,2,3,4) = 30.0</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment"># tensor.dot()在(&gt;= 0.3.0)版本之后只能支持一维数组的内积</span></span><br><span class="line">tensor.dot(tensor)     <span class="comment"># torch 会转换成 [1,2,3,4].dot([1,2,3,4]) = 30.0 并且 tensor 只能是一维数组tensor</span></span><br></pre></td></tr></table></figure>
+        <h1 id="anaconda-虚环境管理"><a href="#anaconda-虚环境管理" class="headerlink" title="anaconda 虚环境管理"></a>anaconda 虚环境管理</h1><h3 id="虚环境创建"><a href="#虚环境创建" class="headerlink" title="虚环境创建"></a>虚环境创建</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py3 python=3.5</span><br></pre></td></tr></table></figure>
+<p>其中py3表示创建环境的名字，后面python=3.5表示创建的版本。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n py3 python=3.5 numpy pandas</span><br></pre></td></tr></table></figure>
+<p>这个是在创建环境的时候同时安装包</p>
+<h3 id="Anaconda环境的激活"><a href="#Anaconda环境的激活" class="headerlink" title="Anaconda环境的激活"></a>Anaconda环境的激活</h3><p>在 OSX/Linux 上</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source activate py3</span><br></pre></td></tr></table></figure>
+<p>py3为环境名，上述表示激活py3</p>
+<p>windows下</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">activate py3</span><br></pre></td></tr></table></figure>
+<h3 id="Anaconda环境的管理"><a href="#Anaconda环境的管理" class="headerlink" title="Anaconda环境的管理"></a>Anaconda环境的管理</h3><p>列出所有环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br></pre></td></tr></table></figure>
+<p>删除环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env remove -n py3</span><br></pre></td></tr></table></figure>
+<p>上述表示删除环境名为py3的环境</p>
+<h3 id="退出环境"><a href="#退出环境" class="headerlink" title="退出环境"></a>退出环境</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source deactivate</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -329,8 +338,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/03/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/10/21/python-spider-youkuVip/" rel="next" title="python_spider_youkuVip">
+                <i class="fa fa-chevron-left"></i> python_spider_youkuVip
               </a>
             
           </div>
@@ -338,10 +347,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/03/biLSTM/" rel="prev" title="biLSTM">
-                biLSTM <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -464,7 +469,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据处理"><span class="nav-number">1.</span> <span class="nav-text">数据处理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#anaconda-虚环境管理"><span class="nav-number">1.</span> <span class="nav-text">anaconda 虚环境管理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#虚环境创建"><span class="nav-number">1.0.1.</span> <span class="nav-text">虚环境创建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda环境的激活"><span class="nav-number">1.0.2.</span> <span class="nav-text">Anaconda环境的激活</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Anaconda环境的管理"><span class="nav-number">1.0.3.</span> <span class="nav-text">Anaconda环境的管理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#退出环境"><span class="nav-number">1.0.4.</span> <span class="nav-text">退出环境</span></a></li></ol></li></ol></div>
             
 
           </div>
